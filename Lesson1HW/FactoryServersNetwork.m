@@ -10,17 +10,19 @@
 
 @implementation FactoryServersNetwork
 
+//сборка
+
 - (void) startFactoryServer
 {
-    [self choiceOfBody];
-    [self choiceOfMotherboard];
-    [self installingTheMotherboard];
-    [self choiseOfProcessor];
-    [self installingTheProcessor];
-    [self choiseOfRAM];
-    [self installingTheRAM];
-    [self choiseOfHDD];
-    [self installingTheHDD];
+    [self choiceOfBody]; // выбор корпуса
+    [self choiceOfMotherboard]; // выбор мат платы
+    [self installingTheMotherboard]; // установка мат платы
+    [self choiseOfProcessor];  // выпор процессора
+    [self installingTheProcessor]; // установка процессова
+    [self choiseOfRAM]; // выбор РАМ
+    [self installingTheRAM]; // установка РАМ
+    [self choiseOfHDD]; // выбор ХДД
+    [self installingTheHDD]; // установка ХПП
 }
 
 - (void) choiceOfBody
@@ -68,12 +70,14 @@
     NSLog(@"installingTheHDD \n ");
 }
 
+//установка ОС
+
 - (void) installationOfTheSoftware
 {
-    [self choiseOS];
-    [self creationRAIDArray];
-    [self installationOS];
-    [self testingOS];
+    [self choiseOS]; // выбор ОС
+    [self creationRAIDArray]; // создание рейд массива
+    [self installationOS]; //установка ОС
+    [self testingOS]; // тестирование
 }
 
 - (void) choiseOS
