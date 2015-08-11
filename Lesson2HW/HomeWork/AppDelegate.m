@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-#import "FactoryServersNetwork.h"
+#import "FactoryServersNetworkWithLinux.h"
+#import "MarriageServer.h"
 
 @interface AppDelegate ()
 
@@ -18,13 +19,23 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-        
     
     
-    FactoryServersNetwork * Server1 = [[FactoryServersNetwork alloc] init];
-    [Server1 startFactoryServer];
-    [Server1 installationOfTheSoftware];
     
+    FactoryDefaultServersNetwork * server1 = [[FactoryDefaultServersNetwork alloc] init];
+    [server1 startFactoryServer];
+    NSLog(@"%@ %i %@",[server1 creationRaidArray1], [server1 numberHDDinREID], [server1 creationRaidArray2]);
+    [server1 installationВуOfTheSoftware];
+    
+    FactoryServersNetworkWithLinux * server2 = [[FactoryServersNetworkWithLinux alloc] init];
+    [server2 startFactoryServer];
+    NSLog(@"%@ %i %@",[server2 creationRaidArray1], [server2 numberHDDinREID], [server2 creationRaidArray2]);
+    [server2 installationВуOfTheSoftware];
+    
+    MarriageServer * server3 = [[MarriageServer alloc] init];
+    [server3 startFactoryServer];
+    NSLog(@"%@ %i %@",[server3 creationRaidArray1], [server3 numberHDDinREID], [server3 creationRaidArray2]);
+    [server3 installationВуOfTheSoftware];
     
     
     
