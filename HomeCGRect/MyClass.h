@@ -1,5 +1,5 @@
 //
-//  Home.h
+//  MyClass.h
 //  HomeCGRect
 //
 //  Created by Viktor on 16.08.15.
@@ -8,8 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Home : NSObject
-
-- (void) itHome;
+@interface MyClass : NSObject
 
 @end
