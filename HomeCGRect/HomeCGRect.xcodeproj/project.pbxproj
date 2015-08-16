@@ -15,7 +15,11 @@
 		77E8BFF91B811C28006D4E44 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77E8BFF71B811C28006D4E44 /* LaunchScreen.xib */; };
 		77E8C0051B811C29006D4E44 /* HomeCGRectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 77E8C0041B811C29006D4E44 /* HomeCGRectTests.m */; };
 		77E8C0101B811C3A006D4E44 /* Home.m in Sources */ = {isa = PBXBuildFile; fileRef = 77E8C00F1B811C3A006D4E44 /* Home.m */; };
+<<<<<<< Updated upstream
 		77E8C0131B811F13006D4E44 /* MyClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 77E8C0121B811F13006D4E44 /* MyClass.m */; };
+=======
+		77E8C0161B811FDC006D4E44 /* Main.m in Sources */ = {isa = PBXBuildFile; fileRef = 77E8C0151B811FDC006D4E44 /* Main.m */; };
+>>>>>>> Stashed changes
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,8 +48,13 @@
 		77E8C0041B811C29006D4E44 /* HomeCGRectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeCGRectTests.m; sourceTree = "<group>"; };
 		77E8C00E1B811C3A006D4E44 /* Home.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Home.h; sourceTree = "<group>"; };
 		77E8C00F1B811C3A006D4E44 /* Home.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Home.m; sourceTree = "<group>"; };
+<<<<<<< Updated upstream
 		77E8C0111B811F13006D4E44 /* MyClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyClass.h; sourceTree = "<group>"; };
 		77E8C0121B811F13006D4E44 /* MyClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyClass.m; sourceTree = "<group>"; };
+=======
+		77E8C0141B811FDC006D4E44 /* Main.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Main.h; sourceTree = "<group>"; };
+		77E8C0151B811FDC006D4E44 /* Main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Main.m; sourceTree = "<group>"; };
+>>>>>>> Stashed changes
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,8 +78,13 @@
 		77E8BFDC1B811C28006D4E44 = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< Updated upstream
 				77E8C0111B811F13006D4E44 /* MyClass.h */,
 				77E8C0121B811F13006D4E44 /* MyClass.m */,
+=======
+				77E8C0141B811FDC006D4E44 /* Main.h */,
+				77E8C0151B811FDC006D4E44 /* Main.m */,
+>>>>>>> Stashed changes
 				77E8C00E1B811C3A006D4E44 /* Home.h */,
 				77E8C00F1B811C3A006D4E44 /* Home.m */,
 				77E8BFE71B811C28006D4E44 /* HomeCGRect */,
@@ -229,6 +243,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77E8C0161B811FDC006D4E44 /* Main.m in Sources */,
 				77E8BFF11B811C28006D4E44 /* ViewController.m in Sources */,
 				77E8BFEE1B811C28006D4E44 /* AppDelegate.m in Sources */,
 				77E8C0131B811F13006D4E44 /* MyClass.m in Sources */,
