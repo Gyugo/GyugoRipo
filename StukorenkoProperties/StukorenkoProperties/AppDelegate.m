@@ -32,10 +32,10 @@
     [boxer setHeight: 1.9f];
     [boxer setWeight: 80.f];
     
-//    NSLog (@"name = %@", boxer.name);
-//    NSLog (@"age = %li", boxer.age);
-//    NSLog (@"height = %1.1f", boxer.height);
-//    NSLog (@"weight = %1.0f", boxer.weight);
+    NSLog (@"name = %@", boxer.name);
+    NSLog (@"age = %li", boxer.age);
+    NSLog (@"height = %1.1f", boxer.height);
+    NSLog (@"weight = %1.0f", boxer.weight);
     
   //              Гетеры
     NSLog(@"name: %@", [boxer name]);
