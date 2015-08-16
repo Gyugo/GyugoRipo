@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		77DA7E5E1B81171B00D12C00 /* Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 77DA7E5D1B81171B00D12C00 /* Test.m */; };
 		77F6054F1B8113A700D15735 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 77F6054E1B8113A700D15735 /* main.m */; };
 		77F605521B8113A700D15735 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77F605511B8113A700D15735 /* AppDelegate.m */; };
 		77F605551B8113A700D15735 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77F605541B8113A700D15735 /* ViewController.m */; };
@@ -27,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		77DA7E5C1B81171B00D12C00 /* Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test.h; sourceTree = "<group>"; };
+		77DA7E5D1B81171B00D12C00 /* Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test.m; sourceTree = "<group>"; };
 		77F605491B8113A700D15735 /* Test1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77F6054D1B8113A700D15735 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		77F6054E1B8113A700D15735 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -63,6 +66,8 @@
 		77F605401B8113A700D15735 = {
 			isa = PBXGroup;
 			children = (
+				77DA7E5C1B81171B00D12C00 /* Test.h */,
+				77DA7E5D1B81171B00D12C00 /* Test.m */,
 				77F6054B1B8113A700D15735 /* Test1 */,
 				77F605651B8113A700D15735 /* Test1Tests */,
 				77F6054A1B8113A700D15735 /* Products */,
@@ -220,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				77F605551B8113A700D15735 /* ViewController.m in Sources */,
+				77DA7E5E1B81171B00D12C00 /* Test.m in Sources */,
 				77F605521B8113A700D15735 /* AppDelegate.m in Sources */,
 				77F6054F1B8113A700D15735 /* main.m in Sources */,
 			);
@@ -416,6 +422,7 @@
 				77F6056E1B8113A700D15735 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		77F6056F1B8113A700D15735 /* Build configuration list for PBXNativeTarget "Test1Tests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +431,7 @@
 				77F605711B8113A700D15735 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
