@@ -10,4 +10,6 @@
 
 @interface Home : NSObject
 
+- (void) itHome;
+
 @end

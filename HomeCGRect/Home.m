@@ -10,4 +10,7 @@
 
 @implementation Home
 
+- (void) itHome {
+    NSLog(@"Начн]м изготовление дома");
+}
 @end
