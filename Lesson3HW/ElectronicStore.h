@@ -10,14 +10,18 @@
 
 @interface ElectronicStore : NSObject
 
+
 //Испльзыем 2 property задание имени и типа магаина
 @property (strong, nonatomic) NSString* name;
 @property (strong, nonatomic) NSString* type;
 
 - (void) helloMethod;
-- (void) byMethod;
-- (void) tV;
-- (void) washingMashine;
-- (void) airConditioning;
+- (void) byeMethod;
+- (void) yourSelectedTV;
+- (void) yourSelectedWashingMashine;
+- (void) yourSelectedAirConditioning;
+- (void) dividingLine;
+- (void) waitMethod;
+
 
 @end

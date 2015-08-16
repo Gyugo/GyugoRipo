@@ -18,36 +18,44 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-
-    ElectronicStore *myStore = [[ElectronicStore alloc] init];
     
-    [myStore setName:@"Cool Store"];
-    [myStore setType:@"Electronic Store"];
-    
-    
-    NSLog(@"Name Store:    \"%@\"", [myStore name]);
-    NSLog(@"Type my Store: \"%@\"\n ", [myStore type]);
-    NSLog(@"**********************************************\n "); //Разделительная черта
+    ElectronicStore * myStore = [[ElectronicStore alloc] init];
     
     [myStore helloMethod];
+    [myStore dividingLine];
+    [myStore waitMethod];
+    //
+    if ([myStore respondsToSelector:@selector(yourSelectedTV)]) {
+        [myStore performSelector:@selector(yourSelectedTV) withObject:nil afterDelay:2.5];
+    }
+    if ([myStore respondsToSelector:@selector(dividingLine)]) {
+        [myStore performSelector:@selector(dividingLine) withObject:nil afterDelay:2.5];
+    }
+    if ([myStore respondsToSelector:@selector(waitMethod)]) {
+        [myStore performSelector:@selector(waitMethod) withObject:nil afterDelay:3];
+    }
     
-    NSLog(@"**********************************************\n "); //Разделительная черта
+    if ([myStore respondsToSelector:@selector(yourSelectedWashingMashine)]) {
+        [myStore performSelector:@selector(yourSelectedWashingMashine) withObject:nil afterDelay:5.5];
+    }
+    if ([myStore respondsToSelector:@selector(dividingLine)]) {
+        [myStore performSelector:@selector(dividingLine) withObject:nil afterDelay:5.5];
+    }
+    if ([myStore respondsToSelector:@selector(waitMethod)]) {
+        [myStore performSelector:@selector(waitMethod) withObject:nil afterDelay:6.0];
+    }
     
-    [myStore tV];
-    
-    NSLog(@"**********************************************\n "); //Разделительная черта
-    
-    [myStore washingMashine];
-    
-    NSLog(@"**********************************************\n "); //Разделительная черта
-    
-    [myStore airConditioning];
-    
-    NSLog(@"**********************************************\n "); //Разделительная черта
-    
-    [myStore byMethod];
+    if ([myStore respondsToSelector:@selector(yourSelectedAirConditioning)]) {
+        [myStore performSelector:@selector(yourSelectedAirConditioning) withObject:nil afterDelay:8.5];
+    }
+    if ([myStore respondsToSelector:@selector(dividingLine)]) {
+        [myStore performSelector:@selector(dividingLine) withObject:nil afterDelay:8.5];
+    }
 
-    
+    if ([myStore respondsToSelector:@selector(byeMethod)]) {
+        [myStore performSelector:@selector(byeMethod) withObject:nil afterDelay:9.0];
+    }
+
     return YES;
 }
 

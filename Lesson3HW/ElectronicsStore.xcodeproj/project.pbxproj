@@ -13,8 +13,8 @@
 		773848581B7F34EE0074C7BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 773848561B7F34EE0074C7BB /* Main.storyboard */; };
 		7738485A1B7F34EE0074C7BB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 773848591B7F34EE0074C7BB /* Images.xcassets */; };
 		7738485D1B7F34EE0074C7BB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7738485B1B7F34EE0074C7BB /* LaunchScreen.xib */; };
-		773848691B7F34EE0074C7BB /* ElectronicsStoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 773848681B7F34EE0074C7BB /* ElectronicsStoreTests.m */; };
 		773848741B7F35040074C7BB /* ElectronicStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 773848731B7F35040074C7BB /* ElectronicStore.m */; };
+		77A40CEA1B8095A500C8937E /* Conversion.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A40CE91B8095A500C8937E /* Conversion.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,10 +39,10 @@
 		773848591B7F34EE0074C7BB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		7738485C1B7F34EE0074C7BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		773848621B7F34EE0074C7BB /* ElectronicsStoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ElectronicsStoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		773848671B7F34EE0074C7BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		773848681B7F34EE0074C7BB /* ElectronicsStoreTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ElectronicsStoreTests.m; sourceTree = "<group>"; };
 		773848721B7F35040074C7BB /* ElectronicStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ElectronicStore.h; sourceTree = "<group>"; };
 		773848731B7F35040074C7BB /* ElectronicStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ElectronicStore.m; sourceTree = "<group>"; };
+		77A40CE81B8095A500C8937E /* Conversion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Conversion.h; sourceTree = "<group>"; };
+		77A40CE91B8095A500C8937E /* Conversion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Conversion.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,8 +68,9 @@
 			children = (
 				773848721B7F35040074C7BB /* ElectronicStore.h */,
 				773848731B7F35040074C7BB /* ElectronicStore.m */,
+				77A40CE81B8095A500C8937E /* Conversion.h */,
+				77A40CE91B8095A500C8937E /* Conversion.m */,
 				7738484B1B7F34EE0074C7BB /* ElectronicsStore */,
-				773848651B7F34EE0074C7BB /* ElectronicsStoreTests */,
 				7738484A1B7F34EE0074C7BB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -103,23 +104,6 @@
 			children = (
 				7738484D1B7F34EE0074C7BB /* Info.plist */,
 				7738484E1B7F34EE0074C7BB /* main.m */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		773848651B7F34EE0074C7BB /* ElectronicsStoreTests */ = {
-			isa = PBXGroup;
-			children = (
-				773848681B7F34EE0074C7BB /* ElectronicsStoreTests.m */,
-				773848661B7F34EE0074C7BB /* Supporting Files */,
-			);
-			path = ElectronicsStoreTests;
-			sourceTree = "<group>";
-		};
-		773848661B7F34EE0074C7BB /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				773848671B7F34EE0074C7BB /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -225,6 +209,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				773848551B7F34EE0074C7BB /* ViewController.m in Sources */,
+				77A40CEA1B8095A500C8937E /* Conversion.m in Sources */,
 				773848741B7F35040074C7BB /* ElectronicStore.m in Sources */,
 				773848521B7F34EE0074C7BB /* AppDelegate.m in Sources */,
 				7738484F1B7F34EE0074C7BB /* main.m in Sources */,
@@ -235,7 +220,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				773848691B7F34EE0074C7BB /* ElectronicsStoreTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,6 +406,7 @@
 				7738486E1B7F34EE0074C7BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7738486F1B7F34EE0074C7BB /* Build configuration list for PBXNativeTarget "ElectronicsStoreTests" */ = {
 			isa = XCConfigurationList;
@@ -430,6 +415,7 @@
 				773848711B7F34EE0074C7BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
