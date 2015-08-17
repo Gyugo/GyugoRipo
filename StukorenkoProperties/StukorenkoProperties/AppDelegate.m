@@ -27,21 +27,26 @@
 //    boxer.weight = 78.0f;
     
   //        Сетеры
-    [boxer setName: @"Bobbi"];
-    [boxer setAge: 30];
-    [boxer setHeight: 1.9f];
-    [boxer setWeight: 80.f];
     
-    NSLog (@"name = %@", boxer.name);
-    NSLog (@"age = %li", boxer.age);
-    NSLog (@"height = %1.1f", boxer.height);
-    NSLog (@"weight = %1.0f", boxer.weight);
+    
+//    [boxer setName: @"Bobbi"];
+//    [boxer setAge: 30];
+//    [boxer setHeight: 1.9f];
+//    [boxer setWeight: 80.f];
+//    
+//    NSLog(@"%li", (long)[boxer howOldAreYou]);
+//    NSLog(@"name = %@", boxer.name);
+    
+//    NSLog (@"name = %@", boxer.name);
+//    NSLog (@"age = %li", boxer.age);
+//    NSLog (@"height = %1.1f", boxer.height);
+//    NSLog (@"weight = %1.0f", boxer.weight);
     
   //              Гетеры
-//    NSLog(@"name: %@", [boxer name]);
-//    NSLog(@"age: %li", [boxer age]);
-//    NSLog(@"height: %1.1f", [boxer height]);
-//    NSLog(@"weight: %1.0f", [boxer weight]);
+    NSLog(@"name: %@", [boxer name]);
+    NSLog(@"age: %d", [boxer age]);
+    NSLog(@"height: %1.1f", [boxer height]);
+    NSLog(@"weight: %1.0f", [boxer weight]);
     
     return YES;
 }
