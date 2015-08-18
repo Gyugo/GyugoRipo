@@ -434,6 +434,7 @@
 				776B80A71B826F4F00AC0F03 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		776B80A81B826F4F00AC0F03 /* Build configuration list for PBXNativeTarget "CompanyTests" */ = {
 			isa = XCConfigurationList;
@@ -442,6 +443,7 @@
 				776B80AA1B826F4F00AC0F03 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -15,6 +15,6 @@
 @property (assign, nonatomic) NSInteger based; //основанна
 @property (strong, nonatomic) NSString* aboutCompany; //о компании
 
-- (void) departmentsCompany;
+- (void)departmentsCompany;
 
 @end

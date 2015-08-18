@@ -10,6 +10,6 @@
 
 @interface ITDepartment : CompanyMain
 
-- (void) workstations;
+- (void)workstationsCompany;
 
 @end

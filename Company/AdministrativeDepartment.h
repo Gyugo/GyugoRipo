@@ -10,13 +10,12 @@
 
 @interface AdministrativeDepartment : CompanyMain
 
-
-- (void) newInnovations;
-- (void) setAdministrativeResolution;
-- (void) quarterlyObjectives;
+- (void)newInnovations;
+- (void)setAdministrativeResolution;
+- (void)quarterlyObjectives;
 // Список квартальных премий
-- (void) quarterlyObjectivesIT;
-- (void) quarterlyObjectivesHR;
-- (void) quarterlyObjectivesFinancial;
-- (void) quarterlyObjectivesSales;
+- (void)quarterlyObjectivesIT;
+- (void)quarterlyObjectivesHR;
+- (void)quarterlyObjectivesFinancial;
+- (void)quarterlyObjectivesSales;
 @end

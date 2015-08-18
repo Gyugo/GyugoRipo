@@ -10,9 +10,10 @@
 
 @implementation CompanyMain
 
-- (void) departmentsCompany {
- //Список отделов компании
-    
+- (void)departmentsCompany
+{
+    //Список отделов компании
+
     [self administrativeDepartment];
     [self iTDepartment];
     [self hRDepartment];
@@ -20,32 +21,34 @@
     [self salesDepartment];
 }
 
+- (void)administrativeDepartment
+{ // Административный отдел
 
-- (void) administrativeDepartment { // Административный отдел
-    
     NSLog(@"Административный отдел");
 }
 
-- (void) iTDepartment { // IT отдел
-    
+- (void)iTDepartment
+{ // IT отдел
+
     NSLog(@"IT отдел");
 }
 
-- (void) hRDepartment { // HR отдел
-    
+- (void)hRDepartment
+{ // HR отдел
+
     NSLog(@"Отдел подбора персонала");
 }
 
-- (void) financialDepartment { // Финансовый отдел
-    
+- (void)financialDepartment
+{ // Финансовый отдел
+
     NSLog(@"Финансовый отдел");
 }
 
-- (void) salesDepartment { // Отдел продаж
-    
+- (void)salesDepartment
+{ // Отдел продаж
+
     NSLog(@"Отдел продаж");
 }
-
-
 
 @end
