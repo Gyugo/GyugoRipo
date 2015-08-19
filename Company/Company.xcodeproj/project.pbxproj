@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		77018A571B84667000C45CCA /* HRDepartment.m in Sources */ = {isa = PBXBuildFile; fileRef = 77018A561B84667000C45CCA /* HRDepartment.m */; };
 		776B80881B826F4F00AC0F03 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 776B80871B826F4F00AC0F03 /* main.m */; };
 		776B808B1B826F4F00AC0F03 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 776B808A1B826F4F00AC0F03 /* AppDelegate.m */; };
 		776B808E1B826F4F00AC0F03 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 776B808D1B826F4F00AC0F03 /* ViewController.m */; };
@@ -30,6 +31,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		77018A551B84667000C45CCA /* HRDepartment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRDepartment.h; sourceTree = "<group>"; };
+		77018A561B84667000C45CCA /* HRDepartment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRDepartment.m; sourceTree = "<group>"; };
 		776B80821B826F4F00AC0F03 /* Company.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Company.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		776B80861B826F4F00AC0F03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		776B80871B826F4F00AC0F03 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -72,6 +75,8 @@
 		776B80791B826F4F00AC0F03 = {
 			isa = PBXGroup;
 			children = (
+				77018A551B84667000C45CCA /* HRDepartment.h */,
+				77018A561B84667000C45CCA /* HRDepartment.m */,
 				776B80B41B82916000AC0F03 /* ITDepartment.h */,
 				776B80B51B82916000AC0F03 /* ITDepartment.m */,
 				776B80AE1B8281D300AC0F03 /* AdministrativeDepartment.h */,
@@ -235,6 +240,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				776B80AD1B826F6B00AC0F03 /* CompanyMain.m in Sources */,
+				77018A571B84667000C45CCA /* HRDepartment.m in Sources */,
 				776B808E1B826F4F00AC0F03 /* ViewController.m in Sources */,
 				776B808B1B826F4F00AC0F03 /* AppDelegate.m in Sources */,
 				776B80B01B8281D300AC0F03 /* AdministrativeDepartment.m in Sources */,

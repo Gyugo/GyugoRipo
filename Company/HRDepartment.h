@@ -10,4 +10,13 @@
 
 @interface HRDepartment : CompanyMain
 
+
+//Список сотрудников головного офиса
+
+- (NSMutableArray*) employeesIT; //Массив сотрудников IT
+- (NSMutableArray*) employeesHR; //Массив сотрудников HR
+- (NSMutableArray*) employeesFinancial; //Массив сотрудников финансового отдела
+
+- (void) test;
+
 @end

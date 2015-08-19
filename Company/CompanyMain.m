@@ -18,7 +18,6 @@
     [self iTDepartment];
     [self hRDepartment];
     [self financialDepartment];
-    [self salesDepartment];
 }
 
 - (void)administrativeDepartment
@@ -44,11 +43,4 @@
 
     NSLog(@"Финансовый отдел");
 }
-
-- (void)salesDepartment
-{ // Отдел продаж
-
-    NSLog(@"Отдел продаж");
-}
-
 @end
