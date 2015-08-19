@@ -9,7 +9,7 @@
 #import "CompanyMain.h"
 
 @interface HRDepartment : CompanyMain
-@property (strong,nonatomic) NSString* wellcome;
+@property (strong, nonatomic) NSString* wellcome;
 
 //Список сотрудников головного офиса
 //ITОтдел------------------------------------------------------

@@ -9,7 +9,7 @@
 #import "CompanyMain.h"
 
 @interface AdministrativeDepartment : CompanyMain
-@property (strong,nonatomic) NSString* wellcome;
+@property (strong, nonatomic) NSString* wellcome;
 
 - (void)newInnovations;
 - (void)setAdministrativeResolution;
@@ -18,5 +18,4 @@
 - (void)quarterlyObjectivesIT;
 - (void)quarterlyObjectivesHR;
 - (void)quarterlyObjectivesFinancial;
-- (void)quarterlyObjectivesSales;
 @end

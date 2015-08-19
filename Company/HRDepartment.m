@@ -44,7 +44,6 @@
     NSLog(@"Список новых сотрудников IT отдела:\n \t\t\t\t\t\t\t\t\t\t\t  1. %@\n \t\t\t\t\t\t\t\t\t\t\t  2. %@", [mArrayNewEmpIT objectAtIndex:(6)], [mArrayNewEmpIT objectAtIndex:(7)]);
 }
 
-
 //Новые сотрудники IT отдела
 
 //---------------------------------------------------------------------

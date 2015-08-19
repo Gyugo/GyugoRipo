@@ -9,13 +9,12 @@
 #import "CompanyMain.h"
 
 @interface FinancialDepartment : CompanyMain
-@property (strong,nonatomic) NSString* wellcome;
-
+@property (strong, nonatomic) NSString* wellcome;
 
 //Зарплата сотрудников------------
-- (void) staffSalaries;
+- (void)staffSalaries;
 //Выдача зарплаты---------------
-- (BOOL) paymentOfWages;
-- (void) printPaymentOfWages;
+- (BOOL)paymentOfWages;
+- (void)printPaymentOfWages;
 
 @end

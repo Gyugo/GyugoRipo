@@ -44,9 +44,9 @@
     NSLog(@"Финансовый отдел");
 }
 
+- (void)dividingLine
+{
 
-- (void) dividingLine {
-    
     NSLog(@"* * * * * * * * * * * * * * * * * * * * * *");
 }
 @end

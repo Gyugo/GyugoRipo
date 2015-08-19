@@ -17,6 +17,7 @@
 
 - (void)setAdministrativeResolution
 {
+    NSLog(@"Одобрение проекта: ");
 
     if ([self administrativeResolution] != 0) {
         NSLog(@"Одобренно!!");
@@ -36,13 +37,15 @@
 
 - (void)newInnovations
 {
-    [self innovationsName:@"Деталь для изучения \"базона хикса\"" innovationsBallans:30000.f innovationsProfit:75000.f];
+    
+    NSLog(@"Развитие нового проекта:  ");
+    [self innovationsName:@"Деталь для изучения \"базона хиггса\"" innovationsBallans:30000.f innovationsProfit:75000.f];
 }
 
 - (void)innovationsName:(NSString*)str innovationsBallans:(CGFloat)value1 innovationsProfit:(CGFloat)value2
 {
 
-    NSLog(@"Ввести новый проект под название: %@, со стартовым расходом %f, планируеммая прибыль %f", str, value1, value2);
+    NSLog(@"Ввести новый проект под названием \"базон хиггса\": \n%@, со стартовым расходом %1.0f руб., планируеммая прибыль %1.0f", str, value1, value2);
 }
 
 //-----------------------------------------------
@@ -51,10 +54,10 @@
 
 - (void)quarterlyObjectives
 { //Список квартальных премий
+    NSLog(@"Квартальные премии: ");
     [self quarterlyObjectivesIT];
     [self quarterlyObjectivesHR];
     [self quarterlyObjectivesFinancial];
-    [self quarterlyObjectivesSales];
 }
 
 - (void)quarterlyObjectivesIT
@@ -102,20 +105,6 @@
         NSLog(@"Оспаривание ситуации");
 }
 
-- (void)quarterlyObjectivesSales
-{ //Задачи Отдела продаж
-    if ([self performance] == 1) {
-        [self quarterlyAward:15000 quarterlyNameDepartment:@"Отдел продаж"];
-    }
-    else if ([self performance] != 1) {
-
-        NSLog(@"Отдел продаж");
-        NSLog(@"Вы не получили квартальную премию, работайте лучше!!");
-    }
-    else
-
-        NSLog(@"Оспаривание ситуации");
-}
 
 - (BOOL)performance
 {
@@ -125,7 +114,7 @@
 
 - (void)quarterlyAward:(NSInteger)value1 quarterlyNameDepartment:(NSString*)str
 { // квартальная премия
-    NSLog(@"%@:  ваша премия стоставила: %li рублей!!", str, value1);
+    NSLog(@"%@:  ваша премия стоставила: %li рублей!!", str, (long)value1);
 }
 
 @end

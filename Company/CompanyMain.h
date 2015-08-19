@@ -16,6 +16,6 @@
 @property (strong, nonatomic) NSString* aboutCompany; //о компании
 
 - (void)departmentsCompany;
-- (void) dividingLine;
+- (void)dividingLine;
 
 @end

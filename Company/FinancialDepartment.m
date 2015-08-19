@@ -12,26 +12,29 @@
 
 //Зарплата сотрудников--------------------------------
 
-- (void) staffSalaries {
+- (void)staffSalaries
+{
     NSLog(@"Зарплата сотрудников компании составляет: ");
-    NSDictionary * salary = [[NSDictionary alloc] initWithObjectsAndKeys:
-                             @"Администратиынй отдел", @"60 000",
-                             @"IT Отдел", @"35 000 рублей",
-                             @"HR Отдел", @"40 000 рублей",
-                             @"Фин. отдел", @"50 000 рублей", nil];
-    for(NSString * key in [salary allKeys]){
+    NSDictionary* salary = [[NSDictionary alloc] initWithObjectsAndKeys:
+                                                     @"Администратиынй отдел", @"60 000",
+                                                 @"IT Отдел", @"35 000 рублей",
+                                                 @"HR Отдел", @"40 000 рублей",
+                                                 @"Фин. отдел", @"50 000 рублей", nil];
+    for (NSString* key in [salary allKeys]) {
         NSLog(@"%@ = %@", key,
-              [salary objectForKey:key]);
+            [salary objectForKey:key]);
     }
 }
 
 //Выдача зарплата-------------------------------------
-- (BOOL) paymentOfWages {
+- (BOOL)paymentOfWages
+{
     return YES;
-    }
+}
 //Выпод на экран решения о выдаче зарплаты
-- (void) printPaymentOfWages {
-    if ([self paymentOfWages] == YES) {
+- (void)printPaymentOfWages
+{
+    if ([self paymentOfWages]) {
         NSLog(@"Поздравляю вы получите зарплату");
     }
     else

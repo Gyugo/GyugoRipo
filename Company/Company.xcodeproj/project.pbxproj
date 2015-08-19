@@ -18,6 +18,7 @@
 		776B80AD1B826F6B00AC0F03 /* CompanyMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 776B80AC1B826F6B00AC0F03 /* CompanyMain.m */; };
 		776B80B01B8281D300AC0F03 /* AdministrativeDepartment.m in Sources */ = {isa = PBXBuildFile; fileRef = 776B80AF1B8281D300AC0F03 /* AdministrativeDepartment.m */; };
 		776B80B61B82916000AC0F03 /* ITDepartment.m in Sources */ = {isa = PBXBuildFile; fileRef = 776B80B51B82916000AC0F03 /* ITDepartment.m */; };
+		77764CD61B84FC16000086C7 /* Unknown.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 77764CD51B84FC16000086C7 /* Unknown.jpg */; };
 		77D6D1861B84EB4E00FF6351 /* FinancialDepartment.m in Sources */ = {isa = PBXBuildFile; fileRef = 77D6D1851B84EB4E00FF6351 /* FinancialDepartment.m */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +54,7 @@
 		776B80AF1B8281D300AC0F03 /* AdministrativeDepartment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdministrativeDepartment.m; sourceTree = "<group>"; };
 		776B80B41B82916000AC0F03 /* ITDepartment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITDepartment.h; sourceTree = "<group>"; };
 		776B80B51B82916000AC0F03 /* ITDepartment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITDepartment.m; sourceTree = "<group>"; };
+		77764CD51B84FC16000086C7 /* Unknown.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Unknown.jpg; sourceTree = "<group>"; };
 		77D6D1841B84EB4E00FF6351 /* FinancialDepartment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FinancialDepartment.h; sourceTree = "<group>"; };
 		77D6D1851B84EB4E00FF6351 /* FinancialDepartment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FinancialDepartment.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -121,6 +123,7 @@
 		776B80851B826F4F00AC0F03 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				77764CD51B84FC16000086C7 /* Unknown.jpg */,
 				776B80861B826F4F00AC0F03 /* Info.plist */,
 				776B80871B826F4F00AC0F03 /* main.m */,
 			);
@@ -226,6 +229,7 @@
 			files = (
 				776B80911B826F4F00AC0F03 /* Main.storyboard in Resources */,
 				776B80961B826F4F00AC0F03 /* LaunchScreen.xib in Resources */,
+				77764CD61B84FC16000086C7 /* Unknown.jpg in Resources */,
 				776B80931B826F4F00AC0F03 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
