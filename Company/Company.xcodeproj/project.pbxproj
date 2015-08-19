@@ -18,6 +18,7 @@
 		776B80AD1B826F6B00AC0F03 /* CompanyMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 776B80AC1B826F6B00AC0F03 /* CompanyMain.m */; };
 		776B80B01B8281D300AC0F03 /* AdministrativeDepartment.m in Sources */ = {isa = PBXBuildFile; fileRef = 776B80AF1B8281D300AC0F03 /* AdministrativeDepartment.m */; };
 		776B80B61B82916000AC0F03 /* ITDepartment.m in Sources */ = {isa = PBXBuildFile; fileRef = 776B80B51B82916000AC0F03 /* ITDepartment.m */; };
+		77D6D1861B84EB4E00FF6351 /* FinancialDepartment.m in Sources */ = {isa = PBXBuildFile; fileRef = 77D6D1851B84EB4E00FF6351 /* FinancialDepartment.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,8 @@
 		776B80AF1B8281D300AC0F03 /* AdministrativeDepartment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdministrativeDepartment.m; sourceTree = "<group>"; };
 		776B80B41B82916000AC0F03 /* ITDepartment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITDepartment.h; sourceTree = "<group>"; };
 		776B80B51B82916000AC0F03 /* ITDepartment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITDepartment.m; sourceTree = "<group>"; };
+		77D6D1841B84EB4E00FF6351 /* FinancialDepartment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FinancialDepartment.h; sourceTree = "<group>"; };
+		77D6D1851B84EB4E00FF6351 /* FinancialDepartment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FinancialDepartment.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +78,8 @@
 		776B80791B826F4F00AC0F03 = {
 			isa = PBXGroup;
 			children = (
+				77D6D1841B84EB4E00FF6351 /* FinancialDepartment.h */,
+				77D6D1851B84EB4E00FF6351 /* FinancialDepartment.m */,
 				77018A551B84667000C45CCA /* HRDepartment.h */,
 				77018A561B84667000C45CCA /* HRDepartment.m */,
 				776B80B41B82916000AC0F03 /* ITDepartment.h */,
@@ -240,6 +245,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				776B80AD1B826F6B00AC0F03 /* CompanyMain.m in Sources */,
+				77D6D1861B84EB4E00FF6351 /* FinancialDepartment.m in Sources */,
 				77018A571B84667000C45CCA /* HRDepartment.m in Sources */,
 				776B808E1B826F4F00AC0F03 /* ViewController.m in Sources */,
 				776B808B1B826F4F00AC0F03 /* AppDelegate.m in Sources */,

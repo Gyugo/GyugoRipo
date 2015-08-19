@@ -9,14 +9,26 @@
 #import "CompanyMain.h"
 
 @interface HRDepartment : CompanyMain
-
+@property (strong,nonatomic) NSString* wellcome;
 
 //Список сотрудников головного офиса
+//ITОтдел------------------------------------------------------
+- (NSMutableArray*)baseEmployeesIT; // Базовый список сотрудников
+- (void)printBaseEmployeesIT; // Вывод на экран базового списка сотрудников
+- (void)workEmployeesIT; //Рабочий список сотрудников, Новый список сотрудников
 
-- (NSMutableArray*) employeesIT; //Массив сотрудников IT
-- (NSMutableArray*) employeesHR; //Массив сотрудников HR
-- (NSMutableArray*) employeesFinancial; //Массив сотрудников финансового отдела
+//-------------------------------------------------------------
 
-- (void) test;
+- (NSMutableArray*)employeesHR; //Массив сотрудников HR
+//-------------------------------------------------------------
+
+- (NSMutableArray*)employeesAdministrative; //Массив Административного Отдела
+
+//ФинОтдел-----------------------------------------------------
+- (NSMutableArray*)baseEmployeesFinDep; //Базовый список сотрудников финансового отделе
+- (void)dismissedEmployeesFinDep; //Список уволенных сотрудников
+- (void)workingEmployeesFinDep; //Рабочий список сотрудников Финансового департамента
+- (void)printBaseEmployeesFinDep; //Распечатка базового списка сотрудников фин отдела
+//-------------------------------------------------------------
 
 @end

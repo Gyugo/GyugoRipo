@@ -9,6 +9,7 @@
 #import "CompanyMain.h"
 
 @interface AdministrativeDepartment : CompanyMain
+@property (strong,nonatomic) NSString* wellcome;
 
 - (void)newInnovations;
 - (void)setAdministrativeResolution;

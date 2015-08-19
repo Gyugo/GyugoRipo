@@ -7,9 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import "AdministrativeDepartment.h"
-#import "ITDepartment.h"
-#import "HRDepartment.h"
 
 @interface AppDelegate ()
 
@@ -20,49 +17,8 @@
 - (BOOL)application:(UIApplication*)application
     didFinishLaunchingWithOptions:(NSDictionary*)launchOptions
 {
+
     // Override point for customization after application launch.
-
-    //Свойства компании North Wind----------------------------------
-
-//    CompanyMain* myCompany = [CompanyMain new];
-//
-//    myCompany.nameCompany = @"North Wind";
-//    myCompany.activities = @"Компания занимается продажей физ. элементов";
-//    myCompany.based = 2009;
-//    myCompany.aboutCompany = @"Наша компания предостовляет запчасти для разработки новейших технологий";
-//
-//    NSLog(@"Наименование Компании: %@", myCompany.nameCompany);
-//    NSLog(@"Деятельность компании: %@", myCompany.activities);
-//    NSLog(@"Компания основанна в: %li", myCompany.based);
-//    NSLog(@"О компании: %@", myCompany.aboutCompany);
-//
-//    //-----------------------------------------------------------------
-//    //Работа с административным отделом--------------------------------
-//    //-----------------------------------------------------------------
-//
-//    AdministrativeDepartment * northWindAdministrative = [[AdministrativeDepartment alloc] init];
-//
-//    [northWindAdministrative quarterlyObjectives];
-//
-//    //-----------------------------------------------------------------
-//    //Работа с IT отделом----------------------------------------------
-//    //-----------------------------------------------------------------
-//
-//    ITDepartment * northWindITDepartment = [[ITDepartment alloc] init];
-//
-//    [northWindITDepartment workstationsCompany];
-//    
-//    //-----------------------------------------------------------------
-//    //Работа с HR отделом----------------------------------------------
-//    //-----------------------------------------------------------------
-
-    
-    
-    HRDepartment * myHR = [[HRDepartment alloc] init];
-    
-    [myHR test];
-
-
 
     return YES;
 }
