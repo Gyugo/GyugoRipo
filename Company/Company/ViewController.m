@@ -101,19 +101,47 @@
 //HR Отдел-----------------------------------------------------------------
 - (void)hRDepartment
 {
-    HRDepartment* hRCompany = [[HRDepartment alloc] init];
-    [hRCompany employeesAdministrative];
+    HRDepartment * hRCompany = [[HRDepartment alloc] init];
+    //Сотрудники IT
+    [hRCompany initEmployeesIT]; //Инициализация массива сотрудников IT отдела
     [hRCompany dividingLine];
-    [hRCompany employeesHR];
+    NSLog(@"Сотрудники IT отдела");
+    [hRCompany.employeesIT addObject:@"Соколов Генадий вавлович"];
+    [hRCompany.employeesIT addObject:@"Некрасов Альберт Петрович"];
+    [hRCompany.employeesIT addObject:@"Жугалев Фёдр Александрович"];
+    [hRCompany.employeesIT addObject:@"Коврижкин Сергей Викторович"];
+    for (int i = 0; i < hRCompany.employeesIT.count; i++) {
+        NSLog(@"%i. %@", i+1, [hRCompany.employeesIT objectAtIndex:(i)]);
+    }
+    //Сотрудники HR
+    [hRCompany initEmployeesHR]; //Инициализация массива сотрудников HR отдела
     [hRCompany dividingLine];
-    [hRCompany printBaseEmployeesIT];
-    [hRCompany workEmployeesIT];
+    NSLog(@"Сотрудники HR отдела");
+    [hRCompany.employeesHR addObject:@"Гаврилова Нина Фёдоровна"];
+    [hRCompany.employeesHR addObject:@"Елизовета Анна Павловна"];
+    [hRCompany.employeesHR addObject:@"Несферидзе Аганеш Ашотовна"];
+    for (int i = 0; i < hRCompany.employeesHR.count; i++) {
+        NSLog(@"%i. %@", i+1, [hRCompany.employeesHR objectAtIndex:(i)]);
+    }
+    //Сотрудники фин. отдела
+    [hRCompany initEmployeesFin]; //Инициализация массива сотрудников Фин отдела
     [hRCompany dividingLine];
-    [hRCompany printBaseEmployeesFinDep];
-    [hRCompany dismissedEmployeesFinDep];
-    [hRCompany workingEmployeesFinDep];
+    NSLog(@"Сотрудники Финансового отдела");
+    [hRCompany.employeesFin addObject:@"Гаврилова Ольга Павловна"];
+    [hRCompany.employeesFin addObject:@"Доможирова Анна Сергеевна"];
+    for (int i = 0; i < hRCompany.employeesFin.count; i++) {
+        NSLog(@"%i. %@", i+1, [hRCompany.employeesFin objectAtIndex:(i)]);
+    }
+    //Сотрудники Адм. отдела
+    [hRCompany initEmployeesAdm]; //Инициализация массива сотрудников Адм отдела
     [hRCompany dividingLine];
-    [hRCompany dividingLine];
+    NSLog(@"Сотрудники Административного отдела");
+    [hRCompany.employeesADM addObject:@"Кузнецов Сергей Николаевич"];
+    [hRCompany.employeesADM addObject:@"Салимзянов Саид Тофикович"];
+    for (int i = 0; i < hRCompany.employeesADM.count; i++) {
+        NSLog(@"%i. %@", i+1, [hRCompany.employeesADM objectAtIndex:(i)]);
+    }
+
 }
 //Фин. Отдел-----------------------------------------------------------------
 - (void)finDepartment

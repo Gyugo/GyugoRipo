@@ -9,26 +9,17 @@
 #import "CompanyMain.h"
 
 @interface HRDepartment : CompanyMain
-@property (strong, nonatomic) NSString* wellcome;
+@property (strong, nonatomic) NSMutableArray * employeesIT; //Массив сотрудников IT отдела
+@property (strong, nonatomic) NSMutableArray * employeesHR; //Массив сотрудников HR отдела
+@property (strong, nonatomic) NSMutableArray * employeesADM; //Массив сотрудников Административного отдела
+@property (strong, nonatomic) NSMutableArray * employeesFin; //Массив сотрудников Финансового отдела
 
-//Список сотрудников головного офиса
-//ITОтдел------------------------------------------------------
-- (NSMutableArray*)baseEmployeesIT; // Базовый список сотрудников
-- (void)printBaseEmployeesIT; // Вывод на экран базового списка сотрудников
-- (void)workEmployeesIT; //Рабочий список сотрудников, Новый список сотрудников
-
-//-------------------------------------------------------------
-
-- (NSMutableArray*)employeesHR; //Массив сотрудников HR
-//-------------------------------------------------------------
-
-- (NSMutableArray*)employeesAdministrative; //Массив Административного Отдела
-
-//ФинОтдел-----------------------------------------------------
-- (NSMutableArray*)baseEmployeesFinDep; //Базовый список сотрудников финансового отделе
-- (void)dismissedEmployeesFinDep; //Список уволенных сотрудников
-- (void)workingEmployeesFinDep; //Рабочий список сотрудников Финансового департамента
-- (void)printBaseEmployeesFinDep; //Распечатка базового списка сотрудников фин отдела
-//-------------------------------------------------------------
-
+//Метод инициализации IT сотрудников-------
+- (void) initEmployeesIT;
+//Метод инициализации HR сотрудников-------
+- (void) initEmployeesHR;
+//Метод инициализации сотрудников Административного отдела-------
+- (void) initEmployeesAdm;
+//Метод инициализации сотрудников Финансового отдела-------
+- (void) initEmployeesFin;
 @end
