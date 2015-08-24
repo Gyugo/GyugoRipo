@@ -15,6 +15,7 @@
 @property (nonatomic, weak) id <MyCompanyDelegate> delegate;
 
 - (void) myConpanyInfo;
+- (void) myConpanyWorkPlace;
 
 @end
 
@@ -22,11 +23,13 @@
 
 @required //методы обязательные к реализации
 
-- (void) protocolMethod: (MyCompany *) protocols string: (NSMutableArray*) array;
+- (void) protocolMethodInfo: (MyCompany *) protocols string: (NSMutableArray*) array;
 
-- (void) setYouName: (NSString*) string;
+- (void) protocolMethodWorkPlace: (MyCompany *) protocols string: (NSMutableArray*) arrayWP;
+
 
 @optional //методы не обязательные к реализации
+
 
 
 @end
