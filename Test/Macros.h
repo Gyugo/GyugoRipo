@@ -10,4 +10,7 @@
 #define Test_Macros_h
 
 
+
+#define NOTIFICATION_TABLE_VIEW_TO_DO_LIST @"NewEvent"
+
 #endif

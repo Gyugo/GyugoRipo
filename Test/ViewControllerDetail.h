@@ -10,4 +10,8 @@
 
 @interface ViewControllerDetail : UIViewController
 
+@property (strong, nonatomic) NSDate * eventDate;
+@property (strong, nonatomic) NSString * eventInfo;
+@property (assign, nonatomic) BOOL isDetail;
+
 @end
