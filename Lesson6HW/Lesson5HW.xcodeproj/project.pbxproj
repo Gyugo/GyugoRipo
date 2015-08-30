@@ -19,7 +19,6 @@
 		7711D3B41B8D94E900FE5F90 /* Несербская.png in Resources */ = {isa = PBXBuildFile; fileRef = 7711D3AA1B8D94E900FE5F90 /* Несербская.png */; };
 		7711D3B51B8D94E900FE5F90 /* Петров.png in Resources */ = {isa = PBXBuildFile; fileRef = 7711D3AB1B8D94E900FE5F90 /* Петров.png */; };
 		7711D3B61B8D94E900FE5F90 /* Устинов.png in Resources */ = {isa = PBXBuildFile; fileRef = 7711D3AC1B8D94E900FE5F90 /* Устинов.png */; };
-		771CA0691B8DC98B00CBDDA7 /* images2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 771CA0681B8DC98B00CBDDA7 /* images2.jpg */; };
 		7744B2111B89F1BA000FC40A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7744B2101B89F1BA000FC40A /* main.m */; };
 		7744B2141B89F1BA000FC40A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7744B2131B89F1BA000FC40A /* AppDelegate.m */; };
 		7744B2171B89F1BA000FC40A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7744B2161B89F1BA000FC40A /* ViewController.m */; };
@@ -59,7 +58,6 @@
 		7711D3AA1B8D94E900FE5F90 /* Несербская.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Несербская.png"; sourceTree = "<group>"; };
 		7711D3AB1B8D94E900FE5F90 /* Петров.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Петров.png"; sourceTree = "<group>"; };
 		7711D3AC1B8D94E900FE5F90 /* Устинов.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Устинов.png"; sourceTree = "<group>"; };
-		771CA0681B8DC98B00CBDDA7 /* images2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = images2.jpg; sourceTree = "<group>"; };
 		7744B20B1B89F1BA000FC40A /* Lesson5HW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lesson5HW.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7744B20F1B89F1BA000FC40A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7744B2101B89F1BA000FC40A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -105,19 +103,19 @@
 		7744B2021B89F1BA000FC40A = {
 			isa = PBXGroup;
 			children = (
-				776D68301B8D002200A362A5 /* CustomTableViewCellWorkPlace.h */,
-				776D68311B8D002200A362A5 /* CustomTableViewCellWorkPlace.m */,
-				776D682D1B8D000B00A362A5 /* CustomTableViewCellEmployees.h */,
-				776D682E1B8D000B00A362A5 /* CustomTableViewCellEmployees.m */,
 				7744B2341B89F1D3000FC40A /* MyCompany.h */,
 				7744B2351B89F1D3000FC40A /* MyCompany.m */,
+				776D682D1B8D000B00A362A5 /* CustomTableViewCellEmployees.h */,
+				776D682E1B8D000B00A362A5 /* CustomTableViewCellEmployees.m */,
+				776D68301B8D002200A362A5 /* CustomTableViewCellWorkPlace.h */,
+				776D68311B8D002200A362A5 /* CustomTableViewCellWorkPlace.m */,
 				7711D3A21B8D909C00FE5F90 /* MacrosMyCompany.h */,
 				7744B20D1B89F1BA000FC40A /* Lesson5HW */,
 				7744B2271B89F1BB000FC40A /* Lesson5HWTests */,
 				7744B20C1B89F1BA000FC40A /* Products */,
 				776D682A1B8CFF9200A362A5 /* ImagesFace */,
-				776D682B1B8CFFA700A362A5 /* Button */,
 				776D682C1B8CFFB300A362A5 /* ImageView */,
+				776D682B1B8CFFA700A362A5 /* Button */,
 			);
 			sourceTree = "<group>";
 		};
@@ -203,7 +201,6 @@
 				776D68351B8D0AAF00A362A5 /* здание.jpg */,
 				7744B2611B8A1525000FC40A /* images.jpg */,
 				776D68371B8D0B2A00A362A5 /* Градиент.jpg */,
-				771CA0681B8DC98B00CBDDA7 /* images2.jpg */,
 			);
 			name = ImageView;
 			sourceTree = "<group>";
@@ -289,7 +286,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				7744B21A1B89F1BA000FC40A /* Main.storyboard in Resources */,
-				771CA0691B8DC98B00CBDDA7 /* images2.jpg in Resources */,
 				7711D3AF1B8D94E900FE5F90 /* Бубнов.png in Resources */,
 				776D68381B8D0B2A00A362A5 /* Градиент.jpg in Resources */,
 				7711D3B11B8D94E900FE5F90 /* Геворкян.png in Resources */,

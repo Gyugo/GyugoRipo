@@ -16,7 +16,7 @@
 
 @property (nonatomic, strong) NSMutableArray* arrayMData; //Создаём массив для хранения информации
 
-@property (weak, nonatomic) IBOutlet UITableView* TableView; //Свойтсво таблицы
+@property (weak, nonatomic) IBOutlet UITableView* tableView; //Свойтсво таблицы
 
 - (IBAction)buttontest:(id)sender; // Кнопка о сотрудниках
 
@@ -31,7 +31,10 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    self.TableView.tableFooterView = [[UIView alloc] init];
+    self.tableView.tableFooterView = [[UIView alloc] init];
+    
+    MyCompany * protocol = [MyCompany new];
+    [protocol myConpanyInfo];
     
     //Создание Нотификаций--------------------------------------------------------------------------
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reloadTableView:) name:NOTIFICATION_MY_COMPANY_TableView_Employees object:nil];
@@ -47,9 +50,6 @@
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
-
-
-//---------------------------------------------------------------------------------
 #pragma mark - MyCompanyDelegate
 
 //Метод протокола (Обязательный)
@@ -67,7 +67,7 @@
     
     self.arrayMData = [[NSMutableArray alloc] initWithArray:arrayConpany];
 
-    [self.TableView reloadSections:[NSIndexSet indexSetWithIndex:0] withRowAnimation:UITableViewRowAnimationLeft];
+    [self.tableView reloadSections:[NSIndexSet indexSetWithIndex:0] withRowAnimation:UITableViewRowAnimationLeft];
 }
 
 #pragma mark - UITableViewDelegate
@@ -89,7 +89,7 @@
     static NSString * identifier = @"Cell1"; //Создаём идентификатор ячейки1
     static NSString * identifier1 = @"Cell2";//Создаём идентификатор ячейки2
     NSDictionary * dict = [self.arrayMData objectAtIndex:indexPath.row];
-    //Если данный ключ принадлежит данной коллекции то выполняется это условие----
+    //Если ключ принадлежит данной коллекции то выполняется это условие----
     if ([dict objectForKey:@"ram"]) {
         CustomTableViewCellWorkPlace * cell = (CustomTableViewCellWorkPlace *)
         [tableView dequeueReusableCellWithIdentifier:identifier1 forIndexPath:
