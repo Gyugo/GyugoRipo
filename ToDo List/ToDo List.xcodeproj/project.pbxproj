@@ -30,8 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		7714C7BA1BA1C98A00109DFF /* ViewMain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewMain.h; sourceTree = "<group>"; };
-		7714C7BB1BA1C98A00109DFF /* ViewMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewMain.m; sourceTree = "<group>"; };
+		7714C7BA1BA1C98A00109DFF /* ViewMain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewMain.h; path = ../ViewMain.h; sourceTree = "<group>"; };
+		7714C7BB1BA1C98A00109DFF /* ViewMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewMain.m; path = ../ViewMain.m; sourceTree = "<group>"; };
 		771612041B9E1DC8001FD30E /* Animation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Animation.h; sourceTree = "<group>"; };
 		771612051B9E1DC8001FD30E /* Animation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Animation.m; sourceTree = "<group>"; };
 		77BE6F881B9C696C00810A9B /* ToDo List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ToDo List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,11 +69,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		77B697B71BA21DF900FA83AD /* To Do List Project */ = {
+			isa = PBXGroup;
+			children = (
+				77BE6F921B9C696C00810A9B /* TableToDoList.h */,
+				77BE6F931B9C696C00810A9B /* TableToDoList.m */,
+				77BE6FB41B9C6F5300810A9B /* ViewControllerDetailToDoList.h */,
+				77BE6FB51B9C6F5300810A9B /* ViewControllerDetailToDoList.m */,
+			);
+			name = "To Do List Project";
+			sourceTree = "<group>";
+		};
 		77BE6F7F1B9C696B00810A9B = {
 			isa = PBXGroup;
 			children = (
-				7714C7BA1BA1C98A00109DFF /* ViewMain.h */,
-				7714C7BB1BA1C98A00109DFF /* ViewMain.m */,
 				77BE6F8A1B9C696C00810A9B /* ToDo List */,
 				77BE6FA41B9C696C00810A9B /* ToDo ListTests */,
 				77BE6F891B9C696C00810A9B /* Products */,
@@ -92,12 +101,11 @@
 		77BE6F8A1B9C696C00810A9B /* ToDo List */ = {
 			isa = PBXGroup;
 			children = (
+				77B697B71BA21DF900FA83AD /* To Do List Project */,
+				7714C7BA1BA1C98A00109DFF /* ViewMain.h */,
+				7714C7BB1BA1C98A00109DFF /* ViewMain.m */,
 				77BE6F8F1B9C696C00810A9B /* AppDelegate.h */,
 				77BE6F901B9C696C00810A9B /* AppDelegate.m */,
-				77BE6F921B9C696C00810A9B /* TableToDoList.h */,
-				77BE6F931B9C696C00810A9B /* TableToDoList.m */,
-				77BE6FB41B9C6F5300810A9B /* ViewControllerDetailToDoList.h */,
-				77BE6FB51B9C6F5300810A9B /* ViewControllerDetailToDoList.m */,
 				771612041B9E1DC8001FD30E /* Animation.h */,
 				771612051B9E1DC8001FD30E /* Animation.m */,
 				77BE6F951B9C696C00810A9B /* Main.storyboard */,

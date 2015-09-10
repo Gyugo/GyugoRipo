@@ -66,6 +66,13 @@
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="JQM-rM-RWe">
+                                        <rect key="frame" x="82" y="26" width="156" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Main menu">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
@@ -108,6 +115,7 @@
                     <navigationItem key="navigationItem" id="4ZG-Kl-4bf"/>
                     <connections>
                         <outlet property="buttonAddTableViewToDoList" destination="wTE-SA-qP3" id="aac-Ep-uqn"/>
+                        <outlet property="buttonMainMenu" destination="JQM-rM-RWe" id="fhB-dQ-Amp"/>
                         <outlet property="lableButtonAdd" destination="g7e-53-VoH" id="9Di-p7-pKx"/>
                         <outlet property="tableViewToDoList" destination="fTz-fj-WDn" id="Euf-Po-44U"/>
                         <outlet property="viewBarTableToDoList" destination="fj9-jV-VDh" id="d2o-3o-hb8"/>
