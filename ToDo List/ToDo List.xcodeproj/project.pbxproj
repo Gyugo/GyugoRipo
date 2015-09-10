@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7714C7BC1BA1C98A00109DFF /* ViewMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 7714C7BB1BA1C98A00109DFF /* ViewMain.m */; };
 		771612061B9E1DC8001FD30E /* Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = 771612051B9E1DC8001FD30E /* Animation.m */; };
 		77BE6F8E1B9C696C00810A9B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 77BE6F8D1B9C696C00810A9B /* main.m */; };
 		77BE6F911B9C696C00810A9B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77BE6F901B9C696C00810A9B /* AppDelegate.m */; };
@@ -29,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7714C7BA1BA1C98A00109DFF /* ViewMain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewMain.h; sourceTree = "<group>"; };
+		7714C7BB1BA1C98A00109DFF /* ViewMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewMain.m; sourceTree = "<group>"; };
 		771612041B9E1DC8001FD30E /* Animation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Animation.h; sourceTree = "<group>"; };
 		771612051B9E1DC8001FD30E /* Animation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Animation.m; sourceTree = "<group>"; };
 		77BE6F881B9C696C00810A9B /* ToDo List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ToDo List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,6 +72,8 @@
 		77BE6F7F1B9C696B00810A9B = {
 			isa = PBXGroup;
 			children = (
+				7714C7BA1BA1C98A00109DFF /* ViewMain.h */,
+				7714C7BB1BA1C98A00109DFF /* ViewMain.m */,
 				77BE6F8A1B9C696C00810A9B /* ToDo List */,
 				77BE6FA41B9C696C00810A9B /* ToDo ListTests */,
 				77BE6F891B9C696C00810A9B /* Products */,
@@ -230,6 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				771612061B9E1DC8001FD30E /* Animation.m in Sources */,
+				7714C7BC1BA1C98A00109DFF /* ViewMain.m in Sources */,
 				77BE6F941B9C696C00810A9B /* TableToDoList.m in Sources */,
 				77BE6FB61B9C6F5300810A9B /* ViewControllerDetailToDoList.m in Sources */,
 				77BE6F911B9C696C00810A9B /* AppDelegate.m in Sources */,

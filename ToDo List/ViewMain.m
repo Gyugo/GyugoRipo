@@ -7,6 +7,7 @@
 //
 
 #import "ViewMain.h"
+#import "TableToDoList.h"
 
 @interface ViewMain ()
 
@@ -16,12 +17,24 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [self.buttomToDolist addTarget:self action:@selector(actionButtonToDoList)
+                              forControlEvents:UIControlEventTouchUpInside];
     // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+
+- (void) actionButtonToDoList {
+    
+    TableToDoList * detail = [self.storyboard instantiateViewControllerWithIdentifier:@"TableView"];
+    [self.navigationController pushViewController:detail animated:YES];
+    
+    
 }
 
 /*

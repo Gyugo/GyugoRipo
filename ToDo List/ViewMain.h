@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewMain : UIViewController
+@property (weak, nonatomic) IBOutlet UIButton *buttomToDolist;
 
 @end
