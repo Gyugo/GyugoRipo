@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		7714C7BC1BA1C98A00109DFF /* ViewMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 7714C7BB1BA1C98A00109DFF /* ViewMain.m */; };
 		771612061B9E1DC8001FD30E /* Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = 771612051B9E1DC8001FD30E /* Animation.m */; };
+		77B697BB1BA2229000FA83AD /* TableViewTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B697BA1BA2229000FA83AD /* TableViewTimer.m */; };
+		77B697BE1BA2229E00FA83AD /* ViewControllerDetailTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B697BD1BA2229E00FA83AD /* ViewControllerDetailTimer.m */; };
 		77BE6F8E1B9C696C00810A9B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 77BE6F8D1B9C696C00810A9B /* main.m */; };
 		77BE6F911B9C696C00810A9B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77BE6F901B9C696C00810A9B /* AppDelegate.m */; };
 		77BE6F941B9C696C00810A9B /* TableToDoList.m in Sources */ = {isa = PBXBuildFile; fileRef = 77BE6F931B9C696C00810A9B /* TableToDoList.m */; };
@@ -34,6 +36,10 @@
 		7714C7BB1BA1C98A00109DFF /* ViewMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewMain.m; path = ../ViewMain.m; sourceTree = "<group>"; };
 		771612041B9E1DC8001FD30E /* Animation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Animation.h; sourceTree = "<group>"; };
 		771612051B9E1DC8001FD30E /* Animation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Animation.m; sourceTree = "<group>"; };
+		77B697B91BA2229000FA83AD /* TableViewTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewTimer.h; sourceTree = "<group>"; };
+		77B697BA1BA2229000FA83AD /* TableViewTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewTimer.m; sourceTree = "<group>"; };
+		77B697BC1BA2229E00FA83AD /* ViewControllerDetailTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerDetailTimer.h; sourceTree = "<group>"; };
+		77B697BD1BA2229E00FA83AD /* ViewControllerDetailTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerDetailTimer.m; sourceTree = "<group>"; };
 		77BE6F881B9C696C00810A9B /* ToDo List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ToDo List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		77BE6F8C1B9C696C00810A9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		77BE6F8D1B9C696C00810A9B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -80,6 +86,17 @@
 			name = "To Do List Project";
 			sourceTree = "<group>";
 		};
+		77B697B81BA2226F00FA83AD /* Timer Project */ = {
+			isa = PBXGroup;
+			children = (
+				77B697B91BA2229000FA83AD /* TableViewTimer.h */,
+				77B697BA1BA2229000FA83AD /* TableViewTimer.m */,
+				77B697BC1BA2229E00FA83AD /* ViewControllerDetailTimer.h */,
+				77B697BD1BA2229E00FA83AD /* ViewControllerDetailTimer.m */,
+			);
+			name = "Timer Project";
+			sourceTree = "<group>";
+		};
 		77BE6F7F1B9C696B00810A9B = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +118,7 @@
 		77BE6F8A1B9C696C00810A9B /* ToDo List */ = {
 			isa = PBXGroup;
 			children = (
+				77B697B81BA2226F00FA83AD /* Timer Project */,
 				77B697B71BA21DF900FA83AD /* To Do List Project */,
 				7714C7BA1BA1C98A00109DFF /* ViewMain.h */,
 				7714C7BB1BA1C98A00109DFF /* ViewMain.m */,
@@ -243,9 +261,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				771612061B9E1DC8001FD30E /* Animation.m in Sources */,
+				77B697BE1BA2229E00FA83AD /* ViewControllerDetailTimer.m in Sources */,
 				7714C7BC1BA1C98A00109DFF /* ViewMain.m in Sources */,
 				77BE6F941B9C696C00810A9B /* TableToDoList.m in Sources */,
 				77BE6FB61B9C6F5300810A9B /* ViewControllerDetailToDoList.m in Sources */,
+				77B697BB1BA2229000FA83AD /* TableViewTimer.m in Sources */,
 				77BE6F911B9C696C00810A9B /* AppDelegate.m in Sources */,
 				77BE6F8E1B9C696C00810A9B /* main.m in Sources */,
 			);

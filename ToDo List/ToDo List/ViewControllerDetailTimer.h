@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewControllerDetailTimer : UIViewController
+@property (weak, nonatomic) IBOutlet UIButton *buttonBackTimer;
 
 @end

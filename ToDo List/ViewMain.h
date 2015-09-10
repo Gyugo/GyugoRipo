@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewMain : UIViewController
-@property (weak, nonatomic) IBOutlet UIButton *buttomToDolist;
+
+@property (weak, nonatomic) IBOutlet UIButton *buttomToDolist; //Переход в To Do List
+@property (weak, nonatomic) IBOutlet UIButton *buttonTimer; //Переход в Timer
 
 @end

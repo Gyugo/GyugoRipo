@@ -49,10 +49,12 @@
         self.labelButtonBack.textColor = [UIColor colorWithRed:0.09f green:0.36f blue:0.03f alpha:1.f];
 
         //labelButtonSave---------
-        
+
         self.labelButtonSave.alpha = 0.f;
 
         self.lableTextField.alpha = 0.f;
+        
+        //Параметры textField----------------------------------------------------
 
         self.textFildViewControllerDetail.text = self.eventInfo;
         self.textFildViewControllerDetail.userInteractionEnabled = NO;
@@ -143,7 +145,7 @@
 //Реализация кнопки buttonBack----------------------------------------------
 - (void)actionButtobBackViewControllerDetail
 {
-    [self.navigationController popToRootViewControllerAnimated:YES];
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 //Реализация кнопки buttonSave----------------------------------------------
@@ -164,7 +166,7 @@
         else {
 
             [self notificationToDoList];
-            [self.navigationController popToRootViewControllerAnimated:YES];
+            [self.navigationController popViewControllerAnimated:YES];
         }
     }
 
@@ -243,8 +245,6 @@
     [[UIApplication sharedApplication] scheduleLocalNotification:notification];
 
     [[NSNotificationCenter defaultCenter] postNotificationName:@"NewEvent" object:nil];
-
-    [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
 #pragma mark - alertMessage

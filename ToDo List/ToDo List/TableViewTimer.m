@@ -7,8 +7,10 @@
 //
 
 #import "TableViewTimer.h"
+#import "ViewControllerDetailTimer.h"
 
-@interface TableViewTimer ()
+@interface TableViewTimer () <UITableViewDataSource, UITableViewDelegate>
+@property (strong, nonatomic) NSMutableArray * mArrayTimer;
 
 @end
 
@@ -16,7 +18,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    //Параметры кнопки buttonMainMenuTimer----------------------------------------
+    [self.buttonMainMenuTimer addTarget:self action:@selector(actionButtonMainMenuTimer)
+                                   forControlEvents:UIControlEventTouchUpInside];
+    
+    //Параметры кнопки buttonAddTimer---------------------------------------------
+    [self.buttonAddTimer addTarget:self action:@selector(actionButtonAddTimer)
+                              forControlEvents:UIControlEventTouchUpInside];
+    
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -24,14 +36,40 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+//Действие кнопки buttonMainMenuTimer-------------------------------------
+- (void) actionButtonMainMenuTimer {
+    
+    [self.navigationController popToRootViewControllerAnimated:YES];
+    
 }
-*/
+
+//Действие кнопки buttonAddTimer------------------------------------------
+- (void) actionButtonAddTimer {
+    
+    ViewControllerDetailTimer * detail = [self.storyboard instantiateViewControllerWithIdentifier:@"DetailTimer"];
+    [self.navigationController pushViewController:detail animated:YES];
+    
+}
+
+#pragma mark - UITableViewDataSource
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    
+    return self.mArrayTimer.count;
+}
+
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    static NSString * identifier = @"Cell1";
+    
+    UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:identifier forIndexPath:indexPath];
+    
+    return cell;
+    
+}
+
+
+#pragma mark - UITableViewDelegate
 
 @end

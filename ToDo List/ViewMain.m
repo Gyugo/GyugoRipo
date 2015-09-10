@@ -8,6 +8,7 @@
 
 #import "ViewMain.h"
 #import "TableToDoList.h"
+#import "TableViewTimer.h"
 
 @interface ViewMain ()
 
@@ -15,25 +16,39 @@
 
 @implementation ViewMain
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
+
+    //Параметры кнопки buttonToDoList-------------------------------------
+    [self.buttomToDolist addTarget:self
+                            action:@selector(actionButtonToDoList)
+                  forControlEvents:UIControlEventTouchUpInside];
     
-    [self.buttomToDolist addTarget:self action:@selector(actionButtonToDoList)
-                              forControlEvents:UIControlEventTouchUpInside];
-    // Do any additional setup after loading the view.
+    //Параметры кнопки buttonTimer----------------------------------------
+    [self.buttonTimer addTarget:self action:@selector(actionButtonTimer)
+                           forControlEvents:UIControlEventTouchUpInside];
 }
 
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
+//Действие кнопки buttonToDoList-----------------------
+- (void)actionButtonToDoList
+{
 
-- (void) actionButtonToDoList {
-    
-    TableToDoList * detail = [self.storyboard instantiateViewControllerWithIdentifier:@"TableView"];
+    TableToDoList* detail = [self.storyboard instantiateViewControllerWithIdentifier:@"TableView"];
     [self.navigationController pushViewController:detail animated:YES];
+}
+
+//Действие кнопки buttonTimer
+- (void) actionButtonTimer {
     
+    TableViewTimer * detail = [self.storyboard instantiateViewControllerWithIdentifier:@"TableTimer"];
+    [self.navigationController pushViewController:detail animated:YES];
     
 }
 
