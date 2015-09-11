@@ -15,4 +15,5 @@
 @property (weak, nonatomic) IBOutlet UILabel *labelStatus; //Статус таймера
 @property (weak, nonatomic) IBOutlet UILabel *labelTimeValue; //Временное значение
 
+@property (nonatomic, assign) BOOL isDetail;
 @end

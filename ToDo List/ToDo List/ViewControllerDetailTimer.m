@@ -18,23 +18,33 @@
 {
     [super viewDidLoad];
 
-    //Скрытие клавиатуры tap качанием-----------------------
+    if (!self.isDetail) {
 
-    UITapGestureRecognizer* handTap = [[UITapGestureRecognizer alloc]
-        initWithTarget:self
-                action:@selector(handleEndEditing)];
-    [self.view addGestureRecognizer:handTap]; //применение тап к view
+        //Скрытие клавиатуры tap качанием-----------------------
 
-    //Параметры buttonBackTimer------------------------------
-    [self.buttonBackTimer addTarget:self
-                             action:@selector(actionButtonBackTimer)
-                   forControlEvents:UIControlEventTouchUpInside];
-    
-    //Параметры labelStatus----------------------------------
-    self.labelStatus.backgroundColor = [UIColor clearColor];
-    
-    //Параметры labelTimeValue-------------------------------
-    self.labelTimeValue.backgroundColor = [UIColor clearColor];
+        UITapGestureRecognizer* handTap = [[UITapGestureRecognizer alloc]
+            initWithTarget:self
+                    action:@selector(handleEndEditing)];
+        [self.view addGestureRecognizer:handTap]; //применение тап к view
+
+        //Параметры buttonBackTimer------------------------------
+        [self.buttonBackTimer addTarget:self
+                                 action:@selector(actionButtonBackTimer)
+                       forControlEvents:UIControlEventTouchUpInside];
+
+        //Параметры кнопки buttonSaveTimer------------------------
+        [self.buttonSaveTimer addTarget:self
+                                 action:@selector(actionButtonSave)
+                       forControlEvents:UIControlEventTouchUpInside];
+
+        //Параметры labelStatus-----------------------------------
+        self.labelStatus.text = NSLocalizedString(@"", nil);
+        self.labelStatus.backgroundColor = [UIColor clearColor];
+
+        //Параметры labelTimeValue--------------------------------
+        self.labelTimeValue.text = NSLocalizedString(@"", nil);
+        self.labelTimeValue.backgroundColor = [UIColor clearColor];
+    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -84,7 +94,7 @@
     }
     return NO;
 }
-
+//Вывод ошибки----------------------------------------------------
 - (void)alertWithTimer:(NSString*)message
 {
 
@@ -95,6 +105,12 @@
                                           otherButtonTitles:nil, nil];
 
     [alert show];
+}
+//реализация кнопки buttonSaveTimer---------------------------------
+- (void)actionButtonSave
+{
+
+    NSLog(@"Save");
 }
 
 @end
