@@ -29,6 +29,12 @@
     [self.buttonBackTimer addTarget:self
                              action:@selector(actionButtonBackTimer)
                    forControlEvents:UIControlEventTouchUpInside];
+    
+    //Параметры labelStatus----------------------------------
+    self.labelStatus.backgroundColor = [UIColor clearColor];
+    
+    //Параметры labelTimeValue-------------------------------
+    self.labelTimeValue.backgroundColor = [UIColor clearColor];
 }
 
 - (void)didReceiveMemoryWarning

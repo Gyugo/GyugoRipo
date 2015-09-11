@@ -9,8 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewControllerDetailTimer : UIViewController
-@property (weak, nonatomic) IBOutlet UITextField *textFieldTimer;
-@property (weak, nonatomic) IBOutlet UIButton *buttonBackTimer;
-@property (weak, nonatomic) IBOutlet UIButton *buttonSaveTimer;
+@property (weak, nonatomic) IBOutlet UITextField *textFieldTimer; //Текстовое поле Timer
+@property (weak, nonatomic) IBOutlet UIButton *buttonBackTimer; //Кнопка возврата
+@property (weak, nonatomic) IBOutlet UIButton *buttonSaveTimer; //Кнопка сохранения
+@property (weak, nonatomic) IBOutlet UILabel *labelStatus; //Статус таймера
+@property (weak, nonatomic) IBOutlet UILabel *labelTimeValue; //Временное значение
 
 @end
