@@ -53,7 +53,7 @@
         self.labelButtonSave.alpha = 0.f;
 
         self.lableTextField.alpha = 0.f;
-        
+
         //Параметры textField----------------------------------------------------
 
         self.textFildViewControllerDetail.text = self.eventInfo;
@@ -110,8 +110,7 @@
         self.lableTextField.textColor = [UIColor blackColor];
         self.lableTextField.alpha = 0.6f;
 
-        UITapGestureRecognizer* handTap = [[UITapGestureRecognizer alloc] initWithTarget:self
-                                                                                  action:@selector(handleEndEditing)];
+        UITapGestureRecognizer* handTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleEndEditing)];
         [self.view addGestureRecognizer:handTap]; //применение тач к view
 
         //Параметры Дата Пикера-------------------------------------------------

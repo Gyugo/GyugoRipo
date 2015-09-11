@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface TableViewTimer : UIViewController
-@property (weak, nonatomic) IBOutlet UIButton *buttonMainMenuTimer;
-@property (weak, nonatomic) IBOutlet UIButton *buttonAddTimer;
+@property (weak, nonatomic) IBOutlet UIButton *buttonMainMenuTimer; //возврат в основное меню
+@property (weak, nonatomic) IBOutlet UIButton *buttonAddTimer; //добавление нового таймера
 
 @end
