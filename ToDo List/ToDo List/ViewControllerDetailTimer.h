@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewControllerDetailTimer : UIViewController
+@property (weak, nonatomic) IBOutlet UITextField *textFieldTimer;
 @property (weak, nonatomic) IBOutlet UIButton *buttonBackTimer;
+@property (weak, nonatomic) IBOutlet UIButton *buttonSaveTimer;
 
 @end

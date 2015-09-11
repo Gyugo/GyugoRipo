@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		7714C7BC1BA1C98A00109DFF /* ViewMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 7714C7BB1BA1C98A00109DFF /* ViewMain.m */; };
 		771612061B9E1DC8001FD30E /* Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = 771612051B9E1DC8001FD30E /* Animation.m */; };
+		773A6C791BA2DA8D008B1BB9 /* UIColor+HexColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 773A6C781BA2DA8D008B1BB9 /* UIColor+HexColor.m */; };
 		77B697BB1BA2229000FA83AD /* TableViewTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B697BA1BA2229000FA83AD /* TableViewTimer.m */; };
 		77B697BE1BA2229E00FA83AD /* ViewControllerDetailTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B697BD1BA2229E00FA83AD /* ViewControllerDetailTimer.m */; };
 		77BE6F8E1B9C696C00810A9B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 77BE6F8D1B9C696C00810A9B /* main.m */; };
@@ -36,6 +37,8 @@
 		7714C7BB1BA1C98A00109DFF /* ViewMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewMain.m; path = ../ViewMain.m; sourceTree = "<group>"; };
 		771612041B9E1DC8001FD30E /* Animation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Animation.h; sourceTree = "<group>"; };
 		771612051B9E1DC8001FD30E /* Animation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Animation.m; sourceTree = "<group>"; };
+		773A6C771BA2DA8D008B1BB9 /* UIColor+HexColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HexColor.h"; sourceTree = "<group>"; };
+		773A6C781BA2DA8D008B1BB9 /* UIColor+HexColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HexColor.m"; sourceTree = "<group>"; };
 		77B697B91BA2229000FA83AD /* TableViewTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewTimer.h; sourceTree = "<group>"; };
 		77B697BA1BA2229000FA83AD /* TableViewTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewTimer.m; sourceTree = "<group>"; };
 		77B697BC1BA2229E00FA83AD /* ViewControllerDetailTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerDetailTimer.h; sourceTree = "<group>"; };
@@ -75,6 +78,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		773A6C761BA2DA7A008B1BB9 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				773A6C771BA2DA8D008B1BB9 /* UIColor+HexColor.h */,
+				773A6C781BA2DA8D008B1BB9 /* UIColor+HexColor.m */,
+			);
+			name = Category;
+			sourceTree = "<group>";
+		};
 		77B697B71BA21DF900FA83AD /* To Do List Project */ = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +130,7 @@
 		77BE6F8A1B9C696C00810A9B /* ToDo List */ = {
 			isa = PBXGroup;
 			children = (
+				773A6C761BA2DA7A008B1BB9 /* Category */,
 				77B697B81BA2226F00FA83AD /* Timer Project */,
 				77B697B71BA21DF900FA83AD /* To Do List Project */,
 				7714C7BA1BA1C98A00109DFF /* ViewMain.h */,
@@ -265,6 +278,7 @@
 				7714C7BC1BA1C98A00109DFF /* ViewMain.m in Sources */,
 				77BE6F941B9C696C00810A9B /* TableToDoList.m in Sources */,
 				77BE6FB61B9C6F5300810A9B /* ViewControllerDetailToDoList.m in Sources */,
+				773A6C791BA2DA8D008B1BB9 /* UIColor+HexColor.m in Sources */,
 				77B697BB1BA2229000FA83AD /* TableViewTimer.m in Sources */,
 				77BE6F911B9C696C00810A9B /* AppDelegate.m in Sources */,
 				77BE6F8E1B9C696C00810A9B /* main.m in Sources */,

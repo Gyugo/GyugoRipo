@@ -8,6 +8,7 @@
 
 #import "TableViewTimer.h"
 #import "ViewControllerDetailTimer.h"
+#import "UIColor+HexColor.h"
 
 @interface TableViewTimer () <UITableViewDataSource, UITableViewDelegate>
 @property (strong, nonatomic) NSMutableArray * mArrayTimer;
@@ -20,6 +21,8 @@
     [super viewDidLoad];
     
     //Параметры кнопки buttonMainMenuTimer----------------------------------------
+    
+    self.buttonMainMenuTimer.backgroundColor = [UIColor colorWithHexString:@"20b2aa"];
     [self.buttonMainMenuTimer addTarget:self action:@selector(actionButtonMainMenuTimer)
                                    forControlEvents:UIControlEventTouchUpInside];
     
