@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MagicalRecord/MagicalRecord.h>
+#import "BoardGame.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 

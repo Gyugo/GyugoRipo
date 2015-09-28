@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ViewController.h"
 
-@interface TebleView : UIViewController
+@interface TebleView : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
 @end

@@ -7,7 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import <MagicalRecord/MagicalRecord.h>
 
 @interface DetailCoreData : NSObject
+
+- (void) addDataNameBoard: (NSString*) nameGame andTypeBoard: (NSString*) typeBoard;
+
+- (void) printCoreData;
+
+- (void)deleteUsers:(NSString*)name andLogin:(NSString*)type;
+
 
 @end

@@ -7,16 +7,24 @@
 //
 
 #import "TebleView.h"
+#import "BoardGame.h"
+#import <MagicalRecord/MagicalRecord.h>
+
 
 @interface TebleView ()
 
+@property (weak, nonatomic) IBOutlet UIButton *buttonAdd;
+@property (strong, nonatomic) NSMutableArray * mArray;
+@property (strong, nonatomic) BoardGame * dataGame;
 @end
 
 @implementation TebleView
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    [self.buttonAdd addTarget:self action:@selector(actionButtonAdd) forControlEvents:UIControlEventTouchUpInside];
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -24,14 +32,31 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void) actionButtonAdd {
+    
+    ViewController * detail = [self.storyboard instantiateViewControllerWithIdentifier:@"viewController"];
+    [self.navigationController pushViewController:detail animated:YES];
+    
 }
-*/
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return self.mArray.count;
+}
+
+
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    static NSString* identifier = @"Cell";
+    UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:identifier forIndexPath:indexPath];
+    self.dataGame = [self.mArray objectAtIndex:indexPath.row];
+    
+    cell.textLabel.text = self.dataGame.gameName;
+    
+    cell.detailTextLabel.text = self.dataGame.gameType;
+    return cell;
+}
+
+
 
 @end

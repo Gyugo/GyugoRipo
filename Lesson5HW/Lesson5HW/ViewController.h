@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MagicalRecord/MagicalRecord.h>
+#import "DetailCoreData.h"
 
 @interface ViewController : UIViewController
 

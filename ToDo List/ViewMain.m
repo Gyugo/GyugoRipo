@@ -8,7 +8,6 @@
 
 #import "ViewMain.h"
 #import "TableToDoList.h"
-#import "TableViewTimer.h"
 
 @interface ViewMain ()
 
@@ -25,9 +24,6 @@
                             action:@selector(actionButtonToDoList)
                   forControlEvents:UIControlEventTouchUpInside];
     
-    //Параметры кнопки buttonTimer----------------------------------------
-    [self.buttonTimer addTarget:self action:@selector(actionButtonTimer)
-                           forControlEvents:UIControlEventTouchUpInside];
 }
 
 - (void)didReceiveMemoryWarning
@@ -44,13 +40,7 @@
     [self.navigationController pushViewController:detail animated:YES];
 }
 
-//Действие кнопки buttonTimer
-- (void) actionButtonTimer {
-    
-    TableViewTimer * detail = [self.storyboard instantiateViewControllerWithIdentifier:@"TableTimer"];
-    [self.navigationController pushViewController:detail animated:YES];
-    
-}
+
 
 /*
 #pragma mark - Navigation
